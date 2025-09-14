@@ -1,69 +1,71 @@
-# 🩺 Diabetes Prediction App
+# 🌾 Crop Disease Detection & Advisory Dashboard
 
-This is a Streamlit-based web application that uses a Logistic Regression model to predict whether a patient is diabetic or not based on health-related parameters. The app provides prediction results along with model accuracy and confidence level.
-
----
-
-## 📊 Features
-
-- Accepts 8 health-related inputs from the user.
-- Predicts whether the patient is **Diabetic** or **Not Diabetic**.
-- Displays:
-  - Model **accuracy** (trained on real data)
-  - **Prediction confidence** (% likelihood of diabetes)
+This is a **Streamlit-based web application** for detecting crop diseases from leaf images and providing treatment advice.  
+⚠️ *This is a demo template. Replace with your own trained ML/DL model for real predictions.*
 
 ---
 
-## 🧾 Input Features
-
-1. **Pregnancies**
-2. **Glucose Level**
-3. **Blood Pressure**
-4. **Skin Thickness**
-5. **Insulin**
-6. **BMI** (Body Mass Index)
-7. **Diabetes Pedigree Function**
-8. **Age**
-
----
-
-## 📁 Project Structure
-
-diabetes-predictor/
-│
-├── app.py # Streamlit app code
-├── data.csv # Dataset (Pima Indians Diabetes Dataset)
-└── README.md # Project instructions
-
+## 🚀 Features
+- Upload leaf images (`.jpg`, `.jpeg`, `.png`)
+- Detect diseases such as:
+  - Healthy
+  - Tomato Mosaic Virus
+  - Powdery Mildew
+  - Leaf Blight
+- Get **confidence score (%)** and **treatment recommendations**
+- Track and visualize **prediction history**
+- Simple, lightweight, and easy to extend with your own model
 
 ---
 
-## ⚙️ Requirements
+## 📦 Installation
 
-- Python 3.7+
-- Streamlit
-- Scikit-learn
-- Pandas
-- NumPy
+1. Clone this repository or copy the code files.
+2. Create a virtual environment (recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Linux/Mac
+   venv\Scripts\activate    # On Windows
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ---
 
-## 📦 Install Dependencies
-
-Create a virtual environment (optional but recommended):
+## ▶️ Run the App
 
 ```bash
-python -m venv venv
-source venv/bin/activate      # On Windows: venv\Scripts\activate
-## Install the required dependencies:
-```bash
-pip install -r requirements.txt
+streamlit run app.py
+```
 
-## 🚀 How to Run the App 
+Then open your browser at: **http://localhost:8501**
 
-Ensure data.csv is present in the same folder as app.py.
+---
 
-Launch the Streamlit app:
+## 🗂 Project Structure
 
-Open your browser and go to:
-http://localhost:8501
+```
+📂 crop-disease-detection
+ ├── app.py               # Main Streamlit app
+ ├── requirements.txt     # Dependencies
+ └── README.md            # Project documentation
+```
+
+---
+
+## 📊 Example Output
+
+- Upload a tomato leaf image
+- App predicts: **Powdery Mildew (92.3%)**
+- Recommendation: 🌿 Use sulfur-based fungicides. Avoid overhead irrigation.
+
+---
+
+## ⚠️ Disclaimer
+
+This app is **for educational/demo purposes only**.  
+It should **not** be used as a substitute for professional agricultural or medical advice.
+
+---
