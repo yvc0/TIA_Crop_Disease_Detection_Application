@@ -67,5 +67,4 @@ Then open your browser at: **http://localhost:8501**
 
 This app is **for educational/demo purposes only**.  
 It should **not** be used as a substitute for professional agricultural or medical advice.
-
 ---
